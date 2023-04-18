@@ -18,19 +18,21 @@ class AddTaskScreen extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 32),
           child: Column(
-           crossAxisAlignment: CrossAxisAlignment.start,
+           crossAxisAlignment: CrossAxisAlignment.stretch,
             children:  [
               const Text(
                   'Add Task',
                 style: TextStyle(
                   color: Color(0xFFc3700b3),
                   fontSize: 24,
-                  fontWeight: FontWeight.bold
+                  fontWeight: FontWeight.bold,
                 ),
+                textAlign: TextAlign.center,
               ),
               const SizedBox(height: 10,),
              const TextField(
-
+               textAlign: TextAlign.center,
+               autofocus: true,
               decoration: InputDecoration(
                 border: UnderlineInputBorder(
                   borderSide: BorderSide(color: Color(0xFFc3700b3),width: 2),
